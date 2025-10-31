@@ -11,7 +11,7 @@
 
     <style>
         body {
-            /* Background-yň täsirini güýçlendirmek üçin. */
+            
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('') no-repeat center center fixed;
             background-size: cover;
         }

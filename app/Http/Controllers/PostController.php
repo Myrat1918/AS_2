@@ -14,14 +14,14 @@ class PostController extends Controller
 {
     public function index(Request $request)
     {
-        // Загружаем справочные данные
+
         $users = User::all();
         $categories = Category::all();
         $teams = Team::all();
         $players = Team::all();
 
 
-        // Валидация фильтров
+
         $request->validate([
             'q' => ['nullable', 'string'],
             'categoryId' => ['nullable', 'integer', 'min:1'],
