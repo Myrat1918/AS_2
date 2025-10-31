@@ -3,7 +3,7 @@
 @section('title', 'Football Teams')
 
 @section('content')
-    <h1 class="h3 fw-bold text-dark mb-4 border-bottom pb-2">Football Teams 🏆</h1>
+    <h1 class="h3 fw-bold text-dark mb-4 border-bottom pb-2">Football Teams </h1>
 
     <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
         @forelse($teams as $team)
