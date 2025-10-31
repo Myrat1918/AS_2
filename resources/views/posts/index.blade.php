@@ -6,7 +6,28 @@
 
     <div class="row row-cols-1 bg-dark">
         @foreach ($posts as $post)
+                        <div class="col-3">
+                <form action="{{ route('posts.index') }}" method="get" class="me-3">
 
+                    <label class="form-label" for="q">Search: </label><br>
+                    <input class="form-control" type="text" name="q" id="q" placeholder="search..."
+                        value="{{ $f_q ? $f_q : ''}}">
+
+                    <label for="category" class="form-label mt-3">Category: </label><br>
+                    <select class="form-select" name="categoryId" id="category_id">
+                        <option value="">-</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}" {{ $f_category == $category->id ? 'selected' : '' }}>
+                                {{ $category->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                    <div class="d-flex mt-4">
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        <a href="{{ route('posts.index') }}" class="btn btn-secondary ms-2 w-100">Reset</a>
+                    </div>
+                </form>
+            </div>
             <div class="col ">
                 <div class="card shadow-lg p-4 p-md-5 mb-5 ">
 

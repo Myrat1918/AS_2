@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Team;
+use App\Models\Players;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -15,6 +17,9 @@ class PostController extends Controller
         // Загружаем справочные данные
         $users = User::all();
         $categories = Category::all();
+        $teams = Team::all();
+        $players = Team::all();
+
 
         // Валидация фильтров
         $request->validate([
@@ -49,6 +54,8 @@ class PostController extends Controller
             'users' => $users,
             'categories' => $categories,
             'posts' => $posts,
+            'teams' => $teams,
+            'players' => $players,
             'f_description' => $f_description,
             'f_user' => $f_user,
             'f_q' => $f_q,
