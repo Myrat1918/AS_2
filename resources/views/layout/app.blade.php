@@ -20,7 +20,7 @@
     </main>
 
     <footer class="mt-5 py-5 text-center small text-muted bg-dark text-white border-top">
-        &copy; {{ date('Y') }} Football News. All rights reserved.
+        &copy; {{ date('Y') }} Football News. All rights reserved!
     </footer>
 
 </body>

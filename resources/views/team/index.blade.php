@@ -16,7 +16,7 @@
                         <h2 class="card-title fs-5 fw-semibold text-dark">{{ $team->name }}</h2>
                         <p class="card-text small text-muted mb-3">{{ $team->city }}</p>
 
-                        <a href="{{ route('teams.index') }}" class="btn btn-sm btn-outline-primary fw-semibold mt-2">
+                        <a href="{{ route('players.index') }}" class="btn btn-sm btn-outline-primary fw-semibold mt-2">
                             View
                         </a>
                     </div>
